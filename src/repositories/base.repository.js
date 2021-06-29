@@ -11,7 +11,7 @@ class BaseRepository{
     async getAll(pageSize = 5, pageNumber = 1){
         // skip and limit, funciones mongoose
         const skips = pageSize*(pageNumber-1);
-        return await this.model.find().skips(skips).limit(pageSize);
+        return await this.model.find().skip(skips).limit(pageSize);
     }
 
     async create(entity){
@@ -23,7 +23,8 @@ class BaseRepository{
     }
 
     async delete(id){
-        return await this.model.findByIdAndDelete(id);
+        await this.model.findByIdAndDelete(id);
+        return true;
     }
 }
 

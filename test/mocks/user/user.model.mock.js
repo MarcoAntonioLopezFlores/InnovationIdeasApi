@@ -1,0 +1,22 @@
+module.exports={
+    user:{
+        _id:"507f191e810c19729de860ea",
+        name:"Marco",
+        username:"marcolf",
+        password:"myStrongPassword"
+    },
+    users:[
+        {
+            _id:"507f191e810c19729de860ea",
+            name:"Marco",
+            username:"marcolf",
+            password:"myStrongPassword"
+        },
+        {
+            _id:"507f191e810c19729de860eb",
+            name:"Antonio",
+            username:"antoniolf",
+            password:"myStrongPassword"
+        }
+    ]
+}

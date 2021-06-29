@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Marco López",
   "license": "ISC",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
-    "jest": "^27.0.4",
+    "jest": "^27.0.6",
     "mockingoose": "^2.15.2",
     "nodemon": "^2.0.7"
   }
