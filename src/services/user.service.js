@@ -18,12 +18,12 @@ class UserService extends BaseService{
 
         const user = await _userRepository.getUserByUsername(username);
 
-        if(!user){
+        /*if(!user){
             const error = new Error();
             error.status = 404;
             error.message="user does not found";
             throw error;
-        }
+        }*/
 
         return user;
     }
